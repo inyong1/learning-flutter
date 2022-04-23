@@ -16,4 +16,6 @@ abstract class AppRoutes {
   static const hideOnScroll = "/hideOnScroll";
   static const circleColor = "/circleColor";
   static const keyboardDetection = "/keybaord-detection";
+  static const intrinsicheight = "/intrinsic-height";
+  static const widgetBolong = "/widget-bolong";
 }

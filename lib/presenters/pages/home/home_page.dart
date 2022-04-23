@@ -13,6 +13,14 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(padding: const EdgeInsets.all(10), children: [
         ListTile(
+          title: const Text("Widget Bolong"),
+          onTap: () => Get.toNamed(AppRoutes.widgetBolong),
+        ),
+        ListTile(
+          title: const Text("Intrinsic Height"),
+          onTap: () => Get.toNamed(AppRoutes.intrinsicheight),
+        ),
+        ListTile(
           title: const Text("Keyboard detection"),
           onTap: () => Get.toNamed(AppRoutes.keyboardDetection),
         ),

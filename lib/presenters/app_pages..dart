@@ -9,6 +9,7 @@ import 'package:learning_flutter/presenters/pages/getx_obx/getx_obx_page.dart';
 import 'package:learning_flutter/presenters/pages/hide_on_scroll/hide_on_scroll_controller.dart';
 import 'package:learning_flutter/presenters/pages/hide_on_scroll/hide_on_scroll_page.dart';
 import 'package:learning_flutter/presenters/pages/home/home_page.dart';
+import 'package:learning_flutter/presenters/pages/intrinsicheight/intrinsic_height_page.dart';
 import 'package:learning_flutter/presenters/pages/keyboard_detection/keyboard_detection_controller.dart';
 import 'package:learning_flutter/presenters/pages/keyboard_detection/keyboard_detection_page.dart';
 import 'package:learning_flutter/presenters/pages/loadmore/load_more_page.dart';
@@ -23,6 +24,7 @@ import 'package:learning_flutter/presenters/pages/textfield_in_bottomsheet/text_
 import 'package:learning_flutter/presenters/pages/textspan/text_span_page.dart';
 import 'package:learning_flutter/presenters/pages/timer/timer_example.dart';
 import 'package:learning_flutter/presenters/pages/webview/webview_page.dart';
+import 'package:learning_flutter/presenters/pages/widget_bolong/widget_bolong_page.dart';
 import 'package:learning_flutter/presenters/pages/wrapcontent_dialog/wrap_content_dialog_page.dart';
 
 import 'pages/timer/timer_example_controller.dart';
@@ -34,6 +36,12 @@ abstract class AppPages {
       name: AppRoutes.home,
       page: () {
         return const HomePage();
+      },
+    ),
+    GetPage(
+      name: AppRoutes.widgetBolong,
+      page: () {
+        return const WidgetBolongPage();
       },
     ),
 
@@ -124,6 +132,10 @@ abstract class AppPages {
     GetPage(
       name: AppRoutes.circleColor,
       page: () => const CircleColorPage(),
+    ),
+    GetPage(
+      name: AppRoutes.intrinsicheight,
+      page: () => const IntrinsicHeightPage(),
     ),
   ];
 }
