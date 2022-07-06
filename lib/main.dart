@@ -4,13 +4,36 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:learning_flutter/presenters/app_pages..dart';
+import 'package:learning_flutter/presenters/app_pages.dart';
 import 'package:learning_flutter/presenters/app_routes.dart';
 
 StreamController broadCaster = StreamController.broadcast();
+
 ValueNotifier notifier = ValueNotifier("inital event");
 
+class TestAja extends StatefulWidget {
+  const TestAja({Key? key}) : super(key: key);
+
+  @override
+  State<TestAja> createState() => _TestAjaState();
+}
+
+class _TestAjaState extends State<TestAja> {
+  @override
+  void initState() {
+    final anu = context.theme.backgroundColor;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
 void main() async {
+  final rxList = [].obs;
+  print("rxList isEmpty?: ${rxList.isEmpty}");
+
   // Timer.periodic(const Duration(seconds: 2), (timer) {
   //   broadCaster.add("data ${timer.tick}");
   //   notifier.value = "data for notifier ${timer.tick}";

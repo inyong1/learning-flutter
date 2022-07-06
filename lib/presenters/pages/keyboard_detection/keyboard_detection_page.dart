@@ -26,7 +26,15 @@ class KeyboardDetectionPage extends GetView<KeyboardDetectionController> {
                       fontSize: 30, fontWeight: FontWeight.bold),
                 ),
               ),
-              const TextField()
+              const TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "ini label",
+                  floatingLabelAlignment: FloatingLabelAlignment.center,
+                  alignLabelWithHint: true,
+                ),
+                textAlign: TextAlign.center,
+              )
             ],
           ),
         ));

@@ -8,20 +8,19 @@ class KeyboardDetectionController extends GetxController
   @override
   void onInit() {
     super.onInit();
-    WidgetsBinding.instance?.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
   }
 
   @override
   void onClose() {
-    WidgetsBinding.instance?.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
     super.onClose();
   }
 
   @override
   void didChangeMetrics() {
     super.didChangeMetrics();
-    final double inset =
-        WidgetsBinding.instance?.window.viewInsets.bottom ?? 0.0;
+    final double inset = WidgetsBinding.instance.window.viewInsets.bottom;
     keyboardShownObs.value = inset != 0.0;
   }
 }

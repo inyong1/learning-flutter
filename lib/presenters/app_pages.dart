@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:learning_flutter/presenters/app_routes.dart';
+import 'package:learning_flutter/presenters/pages/and_logic/and_logic_page.dart';
 import 'package:learning_flutter/presenters/pages/circle_color/circle_color_page.dart';
 import 'package:learning_flutter/presenters/pages/dynamic_route/dynamic_route_controller.dart';
 import 'package:learning_flutter/presenters/pages/dynamic_route/dynamic_route_page.dart';
@@ -18,6 +19,7 @@ import 'package:learning_flutter/presenters/pages/mutli_instance/multi_instance_
 import 'package:learning_flutter/presenters/pages/radiolisttile/radio_listtile_page.dart';
 import 'package:learning_flutter/presenters/pages/scroll_listener/scroll_listener_controller.dart';
 import 'package:learning_flutter/presenters/pages/scroll_listener/scroll_listener_page.dart';
+import 'package:learning_flutter/presenters/pages/syncfution/sync_fution_page.dart';
 import 'package:learning_flutter/presenters/pages/tabbar_in_popup/tabbar_in_popup_controller.dart';
 import 'package:learning_flutter/presenters/pages/tabbar_in_popup/tabbar_in_popup_page.dart';
 import 'package:learning_flutter/presenters/pages/textfield_in_bottomsheet/text_field_in_bottom_sheet_page.dart';
@@ -27,6 +29,7 @@ import 'package:learning_flutter/presenters/pages/webview/webview_page.dart';
 import 'package:learning_flutter/presenters/pages/widget_bolong/widget_bolong_page.dart';
 import 'package:learning_flutter/presenters/pages/wrapcontent_dialog/wrap_content_dialog_page.dart';
 
+import 'pages/sinwave/sine_wave_page.dart';
 import 'pages/timer/timer_example_controller.dart';
 
 abstract class AppPages {
@@ -136,6 +139,18 @@ abstract class AppPages {
     GetPage(
       name: AppRoutes.intrinsicheight,
       page: () => const IntrinsicHeightPage(),
+    ),
+    GetPage(
+      name: AppRoutes.sineWave,
+      page: () => const SineWavePage(),
+    ),
+    GetPage(
+      name: AppRoutes.andLogic,
+      page: () => const AndLogicPage(),
+    ),
+    GetPage(
+      name: AppRoutes.syncFution,
+      page: () => const SyncFutionPage(),
     ),
   ];
 }

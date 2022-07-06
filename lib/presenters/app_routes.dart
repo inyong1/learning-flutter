@@ -18,4 +18,7 @@ abstract class AppRoutes {
   static const keyboardDetection = "/keybaord-detection";
   static const intrinsicheight = "/intrinsic-height";
   static const widgetBolong = "/widget-bolong";
+  static const sineWave = "/sine-wave";
+  static const andLogic = "/and-logic";
+  static const syncFution = "/sync-function";
 }

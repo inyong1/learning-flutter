@@ -13,6 +13,18 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(padding: const EdgeInsets.all(10), children: [
         ListTile(
+          title: const Text("Sync Fution"),
+          onTap: () => Get.toNamed(AppRoutes.syncFution),
+        ),
+        ListTile(
+          title: const Text("And logic"),
+          onTap: () => Get.toNamed(AppRoutes.andLogic),
+        ),
+        ListTile(
+          title: const Text("Sine Wave"),
+          onTap: () => Get.toNamed(AppRoutes.sineWave),
+        ),
+        ListTile(
           title: const Text("Widget Bolong"),
           onTap: () => Get.toNamed(AppRoutes.widgetBolong),
         ),
